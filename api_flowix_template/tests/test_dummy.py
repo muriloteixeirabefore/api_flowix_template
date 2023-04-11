@@ -1,5 +1,4 @@
 import uuid
-from typing import Any
 
 import pytest
 from fastapi import FastAPI
@@ -7,8 +6,7 @@ from httpx import AsyncClient
 from sqlalchemy.ext.asyncio import AsyncSession
 from starlette import status
 
-from api_flowix_template.db.dao.dummy_dao import DummyDAO
-from api_flowix_template.db.models.dummy_model import DummyModel
+from api_flowix_template.crud.dummy_dao import DummyDAO
 
 
 @pytest.mark.anyio

@@ -5,7 +5,7 @@ from sqlalchemy import select
 from sqlalchemy.ext.asyncio import AsyncSession
 
 from api_flowix_template.db.dependencies import get_db_session
-from api_flowix_template.db.models.dummy_model import DummyModel
+from api_flowix_template.models.dummy_model import DummyModel
 
 
 class DummyDAO:

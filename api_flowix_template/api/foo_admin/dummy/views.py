@@ -3,8 +3,8 @@ from typing import List
 from fastapi import APIRouter
 from fastapi.param_functions import Depends
 
-from api_flowix_template.db.dao.dummy_dao import DummyDAO
-from api_flowix_template.db.models.dummy_model import DummyModel
+from api_flowix_template.crud.dummy_dao import DummyDAO
+from api_flowix_template.models.dummy_model import DummyModel
 from api_flowix_template.api.foo_admin.dummy.schema import DummyModelDTO, DummyModelInputDTO
 
 router = APIRouter()
