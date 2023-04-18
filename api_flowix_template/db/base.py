@@ -18,3 +18,10 @@ class Base:
     __tablename__: str
     __table__: Table
     __table_args__: Tuple[Any, ...]
+    id: Any
+    __name__: str
+
+    # Generate __tablename__ automatically
+    @declared_attr
+    def __tablename__(cls) -> str:
+        return cls.__name__.lower()
